@@ -33,3 +33,21 @@ WOE_ID  ISO     Name    Language        PlaceType       Parent_ID
 56042304        BL      "Saint-Barthélemy"      FRE     Country 1
 23424945        SI      Slovenija       UNK     Country 1
 ```
+
+The following command returns the WOEID of the Canadian states.
+```bash
+$ q -t -H  "SELECT * FROM states.tsv WHERE ISO='CA' "
+2344915 CA      Alberta ENG     State   23424775
+2344916 CA      British Columbia        ENG     State   23424775
+2344917 CA      Manitoba        ENG     State   23424775
+2344918 CA      New Brunswick   ENG     State   23424775
+2344919 CA      Newfoundland and Labrador       ENG     State   23424775
+2344920 CA      Northwest Territories   ENG     State   23424775
+2344921 CA      Nova Scotia     ENG     State   23424775
+2344923 CA      Prince Edward Island    ENG     State   23424775
+2344924 CA      Québec  FRE     State   23424775
+2344925 CA      Saskatchewan    ENG     State   23424775
+2344926 CA      Yukon Territory ENG     State   23424775
+20069920        CA      Nunavut ENG     State   23424775
+2344922 CA      Ontario ENG     State   23424775
+```
